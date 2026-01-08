@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致我最爱的人</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="background">
+        <div class="stars"></div>
+        <div class="hearts"></div>
+    </div>
+
+    <!-- 主内容容器 -->
+    <div class="container">
+        <!-- 头部区域 -->
+        <header class="hero">
+            <h1 class="title">亲爱的，你愿意做我的女朋友吗？</h1>
+            <p class="subtitle">在这个特别的日子里，我想对你说...</p>
+        </header>
+
+        <!-- 我们的故事部分 -->
+        <section class="story">
+            <h2 class="section-title">我们的故事</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>第一次相遇</h3>
+                        <p>记得那天在图书馆，你坐在窗边，阳光洒在你的脸上，那一刻我就知道，你是我要找的人。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>第一次聊天</h3>
+                        <p>我们聊了很多，从兴趣爱好到人生理想，发现我们有那么多共同点，仿佛认识了很久。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>第一次约会</h3>
+                        <p>那次去公园散步，我们一起喂鸽子，一起看日落，我希望时间永远停留在那一刻。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 喜欢你的理由部分 -->
+        <section class="reasons">
+            <h2 class="section-title">我喜欢你的理由</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">❤️</div>
+                    <h3>你的微笑</h3>
+                    <p>你的微笑像阳光一样温暖，每次看到都让我心情变好。</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🌟</div>
+                    <h3>你的善良</h3>
+                    <p>你总是那么善良，关心身边的每一个人，这让我很感动。</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">📚</div>
+                    <h3>你的智慧</h3>
+                    <p>和你聊天总能学到很多，你的智慧让我钦佩。</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🎵</div>
+                    <h3>我们的默契</h3>
+                    <p>很多时候我们不需要说话，一个眼神就能明白彼此的想法。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 表白部分 -->
+        <section class="confession">
+            <h2 class="section-title">我的表白</h2>
+            <div class="confession-content">
+                <p>亲爱的，自从遇见你，我的生活变得更加美好。每天醒来想到你，都会觉得很幸福。</p>
+                <p>我想和你一起看更多的风景，一起经历更多的事情，一起度过余生。</p>
+                <p>你愿意做我的女朋友吗？</p>
+            </div>
+            <div class="confession-buttons">
+                <button class="btn btn-yes" onclick="showResponse('yes')">我愿意</button>
+                <button class="btn btn-no" onclick="showResponse('no')">让我考虑一下</button>
+            </div>
+        </section>
+
+        <!-- 响应弹窗 -->
+        <div id="response-modal" class="modal">
+            <div class="modal-content">
+                <div id="modal-message"></div>
+                <button class="btn btn-close" onclick="closeModal()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>永远爱你的人 ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
